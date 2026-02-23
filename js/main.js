@@ -205,8 +205,8 @@ function initCursorEffect() {
    SKILLS — Animate bars on scroll
    ========================================== */
 function initSkillBars() {
-  const skillCards = document.querySelectorAll('.skill-card');
-  if (!skillCards.length) return;
+  const fills = document.querySelectorAll('.hskill__fill');
+  if (!fills.length) return;
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -215,9 +215,9 @@ function initSkillBars() {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.25 });
+  }, { threshold: 0.3 });
 
-  skillCards.forEach(card => observer.observe(card));
+  fills.forEach(fill => observer.observe(fill));
 }
 
 /* ==========================================
