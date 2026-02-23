@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portafolio profesional de Daniel Lopez - Desarrollador y Diseñador UI/UX" />
+    <title>Daniel Lopez | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body>
+
+    <!-- ====== NAVBAR ====== -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <!-- Logo -->
+        <a href="#home" class="nav__logo">
+          <span class="nav__logo-icon">
+            <i class="fas fa-gem"></i>
+          </span>
+          <span class="nav__logo-text">Daniel Lopez</span>
+        </a>
+
+        <!-- Menú de navegación -->
+        <ul class="nav__menu" id="nav-menu">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#testimonials" class="nav__link">Testimonials</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Hamburger (mobile) -->
+        <div class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ====== MAIN ====== -->
+    <main>
+
+      <!-- ====== HOME / HERO ====== -->
+      <section class="home" id="home">
+
+        <!-- Fondo decorativo con círculos -->
+        <div class="home__bg-circles">
+          <div class="bg-circle bg-circle--1"></div>
+          <div class="bg-circle bg-circle--2"></div>
+          <div class="bg-circle bg-circle--3"></div>
+        </div>
+
+        <div class="home__container container">
+
+          <!-- ---- Contenido izquierdo ---- -->
+          <div class="home__content">
+            <p class="home__subtitle">Welcome to my portfolio!</p>
+
+            <h1 class="home__title">
+              Hello, my <br />
+              name's <span class="home__title--accent">Daniel.</span>
+            </h1>
+
+            <p class="home__description">
+              I'm a UI/UX Developer based in Colombia.<br />
+              Currently crafting digital experiences as a<br />
+              <strong>Frontend Developer &amp; UI Consultant.</strong>
+            </p>
+
+            <div class="home__buttons">
+              <a href="#" class="btn btn--primary" download>
+                <i class="fas fa-download"></i> Download CV
+              </a>
+              <a href="#portfolio" class="btn btn--outline">
+                See my work <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+
+            <!-- Scroll down -->
+            <div class="home__scroll">
+              <a href="#about" class="home__scroll-link">
+                <span class="home__scroll-wheel">
+                  <span class="home__scroll-dot"></span>
+                </span>
+                <span class="home__scroll-text">Scroll down</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- ---- Imagen perfil ---- -->
+          <div class="home__image-wrapper">
+            <!-- Elementos decorativos-->
+            <div class="home__deco home__deco--triangle">
+              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 5L55 50H5L30 5Z" fill="url(#triGrad)" />
+                <defs>
+                  <linearGradient id="triGrad" x1="5" y1="50" x2="55" y2="5" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4FACFE"/>
+                    <stop offset="1" stop-color="#00F2FE"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+
+            <div class="home__deco home__deco--spiral">
+              <svg viewBox="0 0 70 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M35 10C20 10 10 22 10 35C10 48 20 60 35 60C50 60 60 50 60 38C60 26 52 18 42 18C32 18 24 26 24 36C24 46 30 52 38 52" stroke="url(#spiralGrad)" stroke-width="5" stroke-linecap="round" fill="none"/>
+                <defs>
+                  <linearGradient id="spiralGrad" x1="10" y1="10" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4FACFE"/>
+                    <stop offset="1" stop-color="#7B61FF"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+
+            <!-- Marco oval de la foto -->
+            <div class="home__photo-frame">
+              <div class="home__photo-ring"></div>
+              <div class="home__photo-placeholder">
+                <!-- Coloca tu foto aquí: <img src="img/profile.jpg" alt="Daniel Lopez" /> -->
+                <div class="home__photo-empty">
+                  <i class="fas fa-user"></i>
+                  <span>Tu foto aquí</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end home__container -->
+
+        <!-- ---- Sidebar redes sociales ---- -->
+        <div class="home__social-sidebar">
+          <span class="home__social-label">Follow me on</span>
+          <div class="home__social-links">
+            <a href="#" class="social-link social-link--be" aria-label="Behance">
+              <i class="fab fa-behance"></i>
+            </a>
+            <a href="#" class="social-link social-link--dr" aria-label="Dribbble">
+              <i class="fab fa-dribbble"></i>
+            </a>
+            <a href="#" class="social-link social-link--li" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Botón scroll to top -->
+        <a href="#home" class="home__scroll-top" id="scroll-top" aria-label="Scroll to top">
+          <i class="fas fa-chevron-up"></i>
+        </a>
+
+      </section><!-- end home -->
+
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
