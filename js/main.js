@@ -202,6 +202,25 @@ function initCursorEffect() {
 }
 
 /* ==========================================
+   SKILLS — Animate bars on scroll
+   ========================================== */
+function initSkillBars() {
+  const skillCards = document.querySelectorAll('.skill-card');
+  if (!skillCards.length) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.25 });
+
+  skillCards.forEach(card => observer.observe(card));
+}
+
+/* ==========================================
    INIT
    ========================================== */
 function init() {
@@ -210,6 +229,9 @@ function init() {
 
   // Cursor effect
   initCursorEffect();
+
+  // Skills bars
+  initSkillBars();
 }
 
 // Lanzar cuando el DOM esté listo
