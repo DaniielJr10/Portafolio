@@ -858,14 +858,18 @@ body::after {
 }
 
 .home__skills-label {
-  font-size: var(--font-size-xs);
-  font-weight: 700;
-  letter-spacing: .14em;
+  font-size: var(--font-size-sm);
+  font-weight: 800;
+  letter-spacing: .18em;
   text-transform: uppercase;
-  color: var(--color-text-muted);
-  padding-bottom: .35rem;
-  border-bottom: 1px solid var(--color-border);
+  background: var(--color-accent-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-bottom: .45rem;
+  border-bottom: 1px solid rgba(77,159,255,0.35);
   text-align: center;
+  text-shadow: none;
 }
 
 /* Row of chips */
