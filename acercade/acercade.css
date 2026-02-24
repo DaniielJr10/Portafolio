@@ -719,82 +719,102 @@ body::after {
 }
 
 /* ==========================================
-   SKILLS GRID
+   SKILLS CHIPS (estilo horizontal compacto)
    ========================================== */
 .about-skills-section {
   display: flex;
   flex-direction: column;
 }
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.skills-chips {
+  display: flex;
+  flex-wrap: wrap;
   gap: .65rem;
 }
 
-.skill-item {
-  background: rgba(15,22,64,0.65);
+/* Chip individual — icon + nombre + barra, vertical */
+.sk-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .4rem;
+  background: rgba(15,22,64,0.6);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
-  padding: .75rem 1rem;
-  backdrop-filter: blur(10px);
+  padding: .65rem .75rem .55rem;
+  min-width: 72px;
+  flex: 1 1 72px;
+  max-width: 96px;
+  backdrop-filter: blur(8px);
   transition: border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+  cursor: default;
 }
-.skill-item:hover {
-  border-color: rgba(77,159,255,0.45);
+.sk-chip:hover {
+  border-color: rgba(77,159,255,0.5);
   transform: translateY(-4px);
-  box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
 }
-.skill-item__header {
-  display: flex;
-  align-items: center;
-  gap: .6rem;
-  margin-bottom: .55rem;
-}
-.skill-item__icon {
-  width: 32px; height: 32px;
-  border-radius: 8px;
+
+/* Icono */
+.sk-chip__icon {
+  flex-shrink: 0;
+  width: 36px; height: 36px;
+  border-radius: 9px;
   display: grid;
   place-items: center;
-  font-size: .95rem;
+  font-size: 1.15rem;
   color: #fff;
-  flex-shrink: 0;
   transition: transform var(--transition-fast);
 }
-.skill-item:hover .skill-item__icon { transform: scale(1.15) rotate(-6deg); }
+.sk-chip:hover .sk-chip__icon { transform: scale(1.15) rotate(-6deg); }
 
-.skill-item__icon--html   { background: linear-gradient(135deg,#e34f26,#f06529); box-shadow: 0 4px 12px rgba(227,79,38,.4); }
-.skill-item__icon--css    { background: linear-gradient(135deg,#264de4,#2965f1); box-shadow: 0 4px 12px rgba(38,77,228,.4); }
-.skill-item__icon--js     { background: linear-gradient(135deg,#c9a800,#f7df1e); box-shadow: 0 4px 12px rgba(247,223,30,.3); color: #1a1a1a; }
-.skill-item__icon--python { background: linear-gradient(135deg,#1e415e,#3776ab); box-shadow: 0 4px 12px rgba(55,118,171,.4); }
-.skill-item__icon--flutter{ background: linear-gradient(135deg,#0175c2,#54c5f8); box-shadow: 0 4px 12px rgba(84,197,248,.4); }
-.skill-item__icon--mysql  { background: linear-gradient(135deg,#c96a00,#f29111); box-shadow: 0 4px 12px rgba(242,145,17,.4); }
-.skill-item__icon--mongo  { background: linear-gradient(135deg,#1a4731,#47a248); box-shadow: 0 4px 12px rgba(71,162,72,.4); }
-.skill-item__icon--figma  { background: linear-gradient(135deg,#a259ff,#f24e1e); box-shadow: 0 4px 12px rgba(242,78,30,.4); }
-.skill-item__icon--git    { background: linear-gradient(135deg,#c0392b,#f05030); box-shadow: 0 4px 12px rgba(240,80,48,.4); }
-.skill-item__icon--scrum  { background: linear-gradient(135deg,#5b3cc4,#7b61ff); box-shadow: 0 4px 12px rgba(123,97,255,.4); }
-.skill-item__icon--excel  { background: linear-gradient(135deg,#185c37,#1d6f42); box-shadow: 0 4px 12px rgba(29,111,66,.4); }
-.skill-item__icon--github { background: linear-gradient(135deg,#24292e,#57606a); box-shadow: 0 4px 12px rgba(87,96,106,.4); }
+.sk-chip__icon--html   { background: linear-gradient(135deg,#e34f26,#f06529); box-shadow: 0 4px 12px rgba(227,79,38,.45); }
+.sk-chip__icon--css    { background: linear-gradient(135deg,#264de4,#2965f1); box-shadow: 0 4px 12px rgba(38,77,228,.45); }
+.sk-chip__icon--js     { background: linear-gradient(135deg,#c9a800,#f7df1e); box-shadow: 0 4px 12px rgba(247,223,30,.35); color: #1a1a1a; }
+.sk-chip__icon--python { background: linear-gradient(135deg,#1e415e,#3776ab); box-shadow: 0 4px 12px rgba(55,118,171,.45); }
+.sk-chip__icon--flutter{ background: linear-gradient(135deg,#0175c2,#54c5f8); box-shadow: 0 4px 12px rgba(84,197,248,.4); }
+.sk-chip__icon--mysql  { background: linear-gradient(135deg,#c96a00,#f29111); box-shadow: 0 4px 12px rgba(242,145,17,.45); }
+.sk-chip__icon--mongo  { background: linear-gradient(135deg,#1a4731,#47a248); box-shadow: 0 4px 12px rgba(71,162,72,.45); }
+.sk-chip__icon--figma  { background: linear-gradient(135deg,#a259ff,#f24e1e); box-shadow: 0 4px 12px rgba(242,78,30,.4); }
+.sk-chip__icon--git    { background: linear-gradient(135deg,#c0392b,#f05030); box-shadow: 0 4px 12px rgba(240,80,48,.4); }
+.sk-chip__icon--scrum  { background: linear-gradient(135deg,#5b3cc4,#7b61ff); box-shadow: 0 4px 12px rgba(123,97,255,.4); }
+.sk-chip__icon--excel  { background: linear-gradient(135deg,#185c37,#1d6f42); box-shadow: 0 4px 12px rgba(29,111,66,.4); }
+.sk-chip__icon--github { background: linear-gradient(135deg,#24292e,#57606a); box-shadow: 0 4px 12px rgba(87,96,106,.4); }
 
-.skill-item__info {
-  flex: 1;
+/* Info */
+.sk-chip__info {
+  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  gap: .3rem;
 }
-.skill-item__name {
-  font-size: var(--font-size-sm);
+.sk-chip__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .05rem;
+  width: 100%;
+  text-align: center;
+}
+.sk-chip__name {
+  font-size: .68rem;
   font-weight: 600;
-  color: var(--color-text-primary);
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
-.skill-item__pct {
-  font-size: var(--font-size-xs);
+.sk-chip__pct {
+  font-size: .62rem;
   font-weight: 700;
   color: var(--color-accent);
   font-variant-numeric: tabular-nums;
 }
-.skill-item__bar {
-  height: 5px;
+.sk-chip__bar {
+  width: 100%;
+  height: 4px;
   background: rgba(255,255,255,0.07);
   border-radius: var(--radius-full);
   overflow: hidden;
@@ -808,6 +828,103 @@ body::after {
   transition: width 1.4s cubic-bezier(.25,.8,.25,1);
 }
 .skill-item__fill.in-view { width: var(--sk-pct); }
+
+/* ==========================================
+   SOFT SKILLS
+   ========================================== */
+.soft-skills {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+
+.soft-skill {
+  display: flex;
+  align-items: center;
+  gap: .85rem;
+  background: rgba(15,22,64,0.55);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: .7rem 1rem;
+  backdrop-filter: blur(10px);
+  transition: border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+.soft-skill:hover {
+  border-color: rgba(77,159,255,0.45);
+  transform: translateX(4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.soft-skill__icon {
+  width: 34px; height: 34px;
+  border-radius: 9px;
+  background: rgba(77,159,255,0.12);
+  border: 1px solid rgba(77,159,255,0.2);
+  display: grid;
+  place-items: center;
+  font-size: .9rem;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast), background var(--transition-fast);
+}
+.soft-skill__icon i {
+  background: var(--color-accent-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.soft-skill:hover .soft-skill__icon {
+  background: rgba(77,159,255,0.22);
+  transform: scale(1.1) rotate(-6deg);
+}
+
+.soft-skill__body {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.soft-skill__name {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+
+/* Estrellas de nivel (5 = máximo) */
+.soft-skill__dots {
+  display: flex;
+  gap: 3px;
+  flex-shrink: 0;
+}
+.soft-skill__dot {
+  font-size: .85rem;
+  line-height: 1;
+  transition: transform var(--transition-fast), filter var(--transition-fast);
+}
+.soft-skill__dot::before {
+  content: '★';
+  color: rgba(255,255,255,0.15);
+}
+.soft-skill__dot--on::before {
+  content: '★';
+  color: #f5c518;
+  filter: drop-shadow(0 0 4px rgba(245,197,24,0.7));
+}
+.soft-skill__dot--half::before {
+  content: '★';
+  background: linear-gradient(90deg, #f5c518 50%, rgba(255,255,255,0.15) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: none;
+}
+.soft-skill:hover .soft-skill__dot--on {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px rgba(245,197,24,0.9));
+}
 
 /* ==========================================
    TOOLS GRID (chips compactos)
@@ -1136,8 +1253,8 @@ body::after {
     gap: .6rem;
   }
 
-  /* Skills — 1 col */
-  .skills-grid { grid-template-columns: 1fr; }
+  /* Skills chips — se ajustan solos con flex-wrap */
+  .skills-chips { gap: .5rem; }
 
   /* Values — 1 col */
   .values-grid { grid-template-columns: 1fr; }
