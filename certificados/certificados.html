@@ -310,6 +310,18 @@
               <i class="fas fa-download"></i>
               <span>Download</span>
             </a>
+            <div class="cert-modal__zoom-controls">
+              <button class="cert-modal__zoom-btn" id="modal-zoom-out" aria-label="Reducir zoom">
+                <i class="fas fa-minus"></i>
+              </button>
+              <span class="cert-modal__zoom-value" id="modal-zoom-value">100%</span>
+              <button class="cert-modal__zoom-btn" id="modal-zoom-in" aria-label="Aumentar zoom">
+                <i class="fas fa-plus"></i>
+              </button>
+              <button class="cert-modal__zoom-btn cert-modal__zoom-btn--reset" id="modal-zoom-reset" aria-label="Restablecer zoom">
+                <i class="fas fa-expand"></i>
+              </button>
+            </div>
             <button class="cert-modal__btn cert-modal__btn--close" id="modal-close" aria-label="Cerrar">
               <i class="fas fa-times"></i>
             </button>
@@ -317,18 +329,12 @@
         </div>
 
         <!-- Visor PDF -->
-        <div class="cert-modal__viewer">
+        <div class="cert-modal__viewer" id="modal-viewer">
           <div class="cert-modal__loader" id="modal-loader">
             <div class="cert-modal__spinner"></div>
             <p>Loading certificate…</p>
           </div>
-          <iframe
-            id="modal-iframe"
-            class="cert-modal__iframe"
-            src=""
-            title="Certificate viewer"
-            frameborder="0"
-          ></iframe>
+          <div class="cert-modal__canvas-wrap" id="modal-canvas-wrap"></div>
         </div>
 
       </div>
@@ -341,6 +347,6 @@
 
     <link rel="stylesheet" href="modal/modal.css" />
     <script src="certificados.js"></script>
-    <script src="modal/modal.js"></script>
+    <script src="modal/modal.js" type="module"></script>
   </body>
 </html>
