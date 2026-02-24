@@ -98,8 +98,8 @@
                 <span class="skill-tag">Bases de datos</span>
                 <span class="skill-tag">Agile</span>
               </div>
-              <a href="#" class="cert-card__link" aria-label="Ver certificado">
-                <i class="fas fa-external-link-alt"></i>
+              <a href="#" class="cert-card__link cert-card__link--disabled" aria-label="Certificado próximamente">
+                <i class="fas fa-clock"></i>
               </a>
             </div>
           </article>
@@ -130,8 +130,15 @@
                 <span class="skill-tag">Redes</span>
                 <span class="skill-tag">SO</span>
               </div>
-              <a href="#" class="cert-card__link" aria-label="Ver certificado">
-                <i class="fas fa-external-link-alt"></i>
+              <a href="docs/tecnico-sistemas.pdf" 
+                 class="cert-card__link" 
+                 aria-label="Ver certificado"
+                 data-modal-pdf="docs/tecnico-sistemas.pdf"
+                 data-modal-title="Técnico en Sistemas"
+                 data-modal-label="SENA — Technology"
+                 data-modal-icon="fas fa-server"
+                 data-modal-color="#7b61ff">
+                <i class="fas fa-eye"></i>
               </a>
             </div>
           </article>
@@ -163,8 +170,15 @@
                 <span class="skill-tag">48 horas</span>
                 <span class="skill-tag">Level 1</span>
               </div>
-              <a href="#" class="cert-card__link" aria-label="Ver certificado">
-                <i class="fas fa-external-link-alt"></i>
+              <a href="docs/english.pdf"
+                 class="cert-card__link"
+                 aria-label="Ver certificado"
+                 data-modal-pdf="docs/english.pdf"
+                 data-modal-title="English Does Work — Level 1"
+                 data-modal-label="SENA — Languages"
+                 data-modal-icon="fas fa-language"
+                 data-modal-color="#10b981">
+                <i class="fas fa-eye"></i>
               </a>
             </div>
           </article>
@@ -196,8 +210,15 @@
                 <span class="skill-tag">Redes</span>
                 <span class="skill-tag">Seguridad</span>
               </div>
-              <a href="#" class="cert-card__link" aria-label="Ver certificado">
-                <i class="fas fa-external-link-alt"></i>
+              <a href="docs/ciberseguridad-neddata.pdf"
+                 class="cert-card__link"
+                 aria-label="Ver certificado"
+                 data-modal-pdf="docs/ciberseguridad-neddata.pdf"
+                 data-modal-title="Bootcamp Zero2Cyber"
+                 data-modal-label="NedData — Cybersecurity"
+                 data-modal-icon="fas fa-shield-halved"
+                 data-modal-color="#ef4444">
+                <i class="fas fa-eye"></i>
               </a>
             </div>
           </article>
@@ -229,8 +250,15 @@
                 <span class="skill-tag">Ética</span>
                 <span class="skill-tag">Educación</span>
               </div>
-              <a href="#" class="cert-card__link" aria-label="Ver certificado">
-                <i class="fas fa-external-link-alt"></i>
+              <a href="docs/ia-formacion.pdf"
+                 class="cert-card__link"
+                 aria-label="Ver certificado"
+                 data-modal-pdf="docs/ia-formacion.pdf"
+                 data-modal-title="Rol de la IA en los Procesos Formativos"
+                 data-modal-label="Formación Institucional — AI"
+                 data-modal-icon="fas fa-robot"
+                 data-modal-color="#f59e0b">
+                <i class="fas fa-eye"></i>
               </a>
             </div>
           </article>
@@ -256,22 +284,63 @@
             <span class="certs-stat__label">Hours (English)</span>
           </div>
         </div>
-            <span class="certs-stat__label">Years learning</span>
-          </div>
-          <div class="certs-stat">
-            <span class="certs-stat__number" data-target="5">0</span>
-            <span class="certs-stat__label">Skill areas</span>
-          </div>
-        </div>
 
       </div><!-- end certs-wrapper -->
     </main>
+
+    <!-- ====== MODAL VISOR DE CERTIFICADO ====== -->
+    <div class="cert-modal" id="cert-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="cert-modal__backdrop" id="modal-backdrop"></div>
+      <div class="cert-modal__panel">
+
+        <!-- Cabecera del modal -->
+        <div class="cert-modal__header">
+          <div class="cert-modal__header-left">
+            <div class="cert-modal__icon-wrap" id="modal-icon-wrap">
+              <i class="fas fa-file-pdf" id="modal-icon"></i>
+            </div>
+            <div>
+              <p class="cert-modal__label" id="modal-label">Certificate</p>
+              <h2 class="cert-modal__title" id="modal-title">Loading…</h2>
+            </div>
+          </div>
+          <div class="cert-modal__header-actions">
+            <a href="#" class="cert-modal__btn cert-modal__btn--download" id="modal-download"
+               download aria-label="Descargar certificado">
+              <i class="fas fa-download"></i>
+              <span>Download</span>
+            </a>
+            <button class="cert-modal__btn cert-modal__btn--close" id="modal-close" aria-label="Cerrar">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Visor PDF -->
+        <div class="cert-modal__viewer">
+          <div class="cert-modal__loader" id="modal-loader">
+            <div class="cert-modal__spinner"></div>
+            <p>Loading certificate…</p>
+          </div>
+          <iframe
+            id="modal-iframe"
+            class="cert-modal__iframe"
+            src=""
+            title="Certificate viewer"
+            frameborder="0"
+          ></iframe>
+        </div>
+
+      </div>
+    </div>
 
     <!-- Scroll top -->
     <a href="#" class="scroll-top" id="scroll-top" aria-label="Scroll to top">
       <i class="fas fa-chevron-up"></i>
     </a>
 
+    <link rel="stylesheet" href="modal/modal.css" />
     <script src="certificados.js"></script>
+    <script src="modal/modal.js"></script>
   </body>
 </html>

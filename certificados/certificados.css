@@ -556,6 +556,15 @@ body::after {
   box-shadow: 0 6px 18px rgba(77,159,255,0.45);
 }
 
+/* External link — disabled state */
+.cert-card__link--disabled {
+  background: rgba(106,127,168,0.08);
+  border-color: rgba(106,127,168,0.2);
+  color: var(--color-text-muted);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 /* ---- Hidden state for filter ---- */
 .cert-card.hidden {
   display: none;
