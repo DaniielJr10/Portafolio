@@ -47,26 +47,403 @@
 
       <div class="about-wrapper container">
 
-        <!-- ===== HERO DE SECCIÓN ===== -->
-        <div class="about-hero">
-          <p class="about-hero__subtitle">Who I am</p>
-          <h1 class="about-hero__title">
-            About <span class="about-hero__title--accent">Me.</span>
-          </h1>
-          <p class="about-hero__desc">
-            Software developer passionate about building comprehensive and efficient 
-            tech solutions — from interfaces to backends and databases.
-          </p>
-        </div>
-
-        <!-- ===== CONTENIDO PRINCIPAL — 2 columnas ===== -->
+        <!-- ===== BLOQUE 1: PERFIL COMPLETO (profile card + bio) ===== -->
         <div class="about-main">
 
-          <!-- ---- Columna izquierda: Foto + stats ---- -->
+          <!-- ---- Columna izquierda: Profile Card ---- -->
           <div class="about-left reveal reveal--left">
 
-            <!-- Marco de foto -->
-            <div class="about-photo-wrapper">
+            <!-- Tarjeta de perfil -->
+            <div class="profile-card">
+
+              <!-- Foto circular pequeña + badge -->
+              <div class="profile-card__photo-wrap">
+                <div class="profile-card__photo-ring"></div>
+                <div class="profile-card__photo-frame">
+                  <img src="../images/imagen_perfil.png" alt="Daniel Lopez" />
+                </div>
+                <div class="profile-card__status">
+                  <span class="profile-card__status-dot"></span>
+                  <span>Available</span>
+                </div>
+              </div>
+
+              <!-- Nombre y título -->
+              <div class="profile-card__identity">
+                <h2 class="profile-card__name">Daniel Lopez</h2>
+                <p class="profile-card__role">Software Developer</p>
+                <p class="profile-card__role profile-card__role--sub">Frontend · Backend · Databases</p>
+              </div>
+
+              <!-- Divider -->
+              <div class="profile-card__divider"></div>
+
+              <!-- Info personal -->
+              <div class="profile-card__details">
+                <div class="about-detail">
+                  <span class="about-detail__icon"><i class="fas fa-map-marker-alt"></i></span>
+                  <div>
+                    <span class="about-detail__label">Location</span>
+                    <span class="about-detail__value">Colombia</span>
+                  </div>
+                </div>
+                <div class="about-detail">
+                  <span class="about-detail__icon"><i class="fas fa-graduation-cap"></i></span>
+                  <div>
+                    <span class="about-detail__label">Education</span>
+                    <span class="about-detail__value">SENA — Tecnólogo ADSI</span>
+                  </div>
+                </div>
+                <div class="about-detail">
+                  <span class="about-detail__icon"><i class="fas fa-language"></i></span>
+                  <div>
+                    <span class="about-detail__label">Languages</span>
+                    <span class="about-detail__value">Spanish (Native) · English (Basic)</span>
+                  </div>
+                </div>
+                <div class="about-detail">
+                  <span class="about-detail__icon"><i class="fas fa-briefcase"></i></span>
+                  <div>
+                    <span class="about-detail__label">Available</span>
+                    <span class="about-detail__value about-detail__value--available">Remote · Hybrid · On-site</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Divider -->
+              <div class="profile-card__divider"></div>
+
+              <!-- Stats compactas dentro de la card -->
+              <div class="profile-card__stats">
+                <div class="profile-stat">
+                  <span class="profile-stat__number stat-card__number">2+</span>
+                  <span class="profile-stat__label">Years<br/>Exp.</span>
+                </div>
+                <div class="profile-stat">
+                  <span class="profile-stat__number stat-card__number">15+</span>
+                  <span class="profile-stat__label">Projects<br/>Done</span>
+                </div>
+                <div class="profile-stat">
+                  <span class="profile-stat__number stat-card__number">4+</span>
+                  <span class="profile-stat__label">Certs<br/>Earned</span>
+                </div>
+              </div>
+
+            </div><!-- end profile-card -->
+          </div>
+
+          <!-- ---- Columna derecha: Bio + botones ---- -->
+          <div class="about-right reveal reveal--right">
+
+            <!-- Encabezado -->
+            <div class="about-bio__header">
+              <p class="about-hero__subtitle">Who I am</p>
+              <h1 class="about-bio__title">
+                Software Developer —
+                <span class="about-bio__title--accent">Frontend, Backend &amp; Databases</span>
+              </h1>
+            </div>
+
+            <!-- Bio condensada -->
+            <div class="about-bio">
+              <p class="about-bio__text">
+                Hi! I'm <strong>Daniel Lopez</strong>, a <strong>Tecnólogo en Análisis y Desarrollo de Software</strong> 
+                passionate about building integral and efficient tech solutions. Solid knowledge in 
+                <strong>HTML, CSS, JavaScript, Python and Flutter</strong>, databases (<strong>MySQL &amp; MongoDB</strong>), 
+                software testing, technical documentation and <strong>Scrum</strong> agile methodology.
+              </p>
+              <p class="about-bio__text">
+                Before tech, I worked in <strong>sales, administration and cash handling</strong> — 
+                which shaped my strong client orientation, organizational skills and problem-solving agility. 
+                I'm currently seeking an opportunity <strong>(remote, hybrid or on-site)</strong> to 
+                contribute real value and grow alongside an experienced team.
+              </p>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="about-actions">
+              <a href="../cv/Hoja de Vida.pdf" class="btn btn--primary" download="Hoja de Vida.pdf">
+                <i class="fas fa-download"></i> Download CV
+              </a>
+              <a href="../contacto/contacto.html" class="btn btn--outline">
+                Contact Me <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+
+          </div><!-- end about-right -->
+        </div><!-- end about-main -->
+
+
+        <!-- ===== BLOQUE 2: SKILLS + TOOLS EN PARALELO ===== -->
+        <div class="about-skills-tools reveal">
+
+          <!-- Skills con barras -->
+          <div class="about-skills-col">
+            <div class="section-label section-label--left">
+              <span class="section-label__text">Technical Skills</span>
+              <span class="section-label__line"></span>
+            </div>
+
+            <div class="skills-grid">
+
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <div class="skill-item__icon skill-item__icon--html"><i class="fab fa-html5"></i></div>
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">HTML5</span>
+                    <span class="skill-item__pct">95%</span>
+                  </div>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--sk-pct:95%;--sk-color:#e34f26;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <div class="skill-item__icon skill-item__icon--css"><i class="fab fa-css3-alt"></i></div>
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">CSS3</span>
+                    <span class="skill-item__pct">90%</span>
+                  </div>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--sk-pct:90%;--sk-color:#264de4;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <div class="skill-item__icon skill-item__icon--js"><i class="fab fa-js"></i></div>
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">JavaScript</span>
+                    <span class="skill-item__pct">80%</span>
+                  </div>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--sk-pct:80%;--sk-color:#f7df1e;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <div class="skill-item__icon skill-item__icon--python"><i class="fab fa-python"></i></div>
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">Python</span>
+                    <span class="skill-item__pct">75%</span>
+                  </div>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--sk-pct:75%;--sk-color:#3776ab;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <div class="skill-item__icon skill-item__icon--flutter"><i class="fas fa-mobile-screen-button"></i></div>
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">Flutter</span>
+                    <span class="skill-item__pct">65%</span>
+                  </div>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--sk-pct:65%;--sk-color:#54c5f8;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <div class="skill-item__icon skill-item__icon--mysql"><i class="fas fa-database"></i></div>
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">MySQL</span>
+                    <span class="skill-item__pct">72%</span>
+                  </div>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--sk-pct:72%;--sk-color:#f29111;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <div class="skill-item__icon skill-item__icon--mongo"><i class="fas fa-leaf"></i></div>
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">MongoDB</span>
+                    <span class="skill-item__pct">70%</span>
+                  </div>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--sk-pct:70%;--sk-color:#47a248;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <div class="skill-item__icon skill-item__icon--figma"><i class="fab fa-figma"></i></div>
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">Figma</span>
+                    <span class="skill-item__pct">85%</span>
+                  </div>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--sk-pct:85%;--sk-color:#f24e1e;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <div class="skill-item__icon skill-item__icon--git"><i class="fab fa-git-alt"></i></div>
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">Git</span>
+                    <span class="skill-item__pct">78%</span>
+                  </div>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--sk-pct:78%;--sk-color:#f05030;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <div class="skill-item__icon skill-item__icon--scrum"><i class="fas fa-arrows-spin"></i></div>
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">Scrum / Agile</span>
+                    <span class="skill-item__pct">80%</span>
+                  </div>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--sk-pct:80%;--sk-color:#7b61ff;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <div class="skill-item__icon skill-item__icon--excel"><i class="fas fa-file-excel"></i></div>
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">Excel</span>
+                    <span class="skill-item__pct">82%</span>
+                  </div>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--sk-pct:82%;--sk-color:#1d6f42;"></div></div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item__header">
+                  <div class="skill-item__icon skill-item__icon--github"><i class="fab fa-github"></i></div>
+                  <div class="skill-item__info">
+                    <span class="skill-item__name">GitHub</span>
+                    <span class="skill-item__pct">78%</span>
+                  </div>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--sk-pct:78%;--sk-color:#e6edf3;"></div></div>
+              </div>
+
+            </div>
+          </div><!-- end skills-col -->
+
+          <!-- Tools chips (columna derecha) -->
+          <div class="about-tools-col">
+          <!-- Timeline compacto dentro de esta columna -->
+            <div class="section-label section-label--left" style="margin-top:2rem;">
+              <span class="section-label__text">My Journey</span>
+              <span class="section-label__line"></span>
+            </div>
+
+            <div class="timeline-compact">
+
+              <div class="tl-compact-item">
+                <div class="tl-compact-dot"><i class="fas fa-store"></i></div>
+                <div class="tl-compact-body">
+                  <span class="tl-compact-date">Before 2022</span>
+                  <h4 class="tl-compact-title">Sales &amp; Administration</h4>
+                  <p class="tl-compact-place">Customer service, cash handling &amp; admin processes.</p>
+                </div>
+              </div>
+
+              <div class="tl-compact-item">
+                <div class="tl-compact-dot"><i class="fas fa-server"></i></div>
+                <div class="tl-compact-body">
+                  <span class="tl-compact-date">2022 – 2024</span>
+                  <h4 class="tl-compact-title">Técnico en Sistemas — SENA</h4>
+                  <p class="tl-compact-place">Hardware, networks, OS &amp; technical support.</p>
+                </div>
+              </div>
+
+              <div class="tl-compact-item">
+                <div class="tl-compact-dot"><i class="fas fa-laptop-code"></i></div>
+                <div class="tl-compact-body">
+                  <span class="tl-compact-date">2022 – 2025</span>
+                  <h4 class="tl-compact-title">Tecnólogo ADSI — SENA</h4>
+                  <p class="tl-compact-place">Full stack dev, Scrum, databases, Flutter &amp; testing.</p>
+                </div>
+              </div>
+
+              <div class="tl-compact-item">
+                <div class="tl-compact-dot"><i class="fas fa-shield-halved"></i></div>
+                <div class="tl-compact-body">
+                  <span class="tl-compact-date">2024</span>
+                  <h4 class="tl-compact-title">Bootcamp Zero2Cyber — NedData</h4>
+                  <p class="tl-compact-place">Cybersecurity, ethical hacking &amp; network security.</p>
+                </div>
+              </div>
+
+              <div class="tl-compact-item">
+                <div class="tl-compact-dot tl-compact-dot--active"><i class="fas fa-rocket"></i></div>
+                <div class="tl-compact-body">
+                  <span class="tl-compact-date">2025 – Present</span>
+                  <h4 class="tl-compact-title">Software Developer — Freelance</h4>
+                  <p class="tl-compact-place">Frontend, backend &amp; database solutions for clients.</p>
+                </div>
+              </div>
+
+            </div><!-- end timeline-compact -->
+          </div><!-- end tools-col -->
+
+        </div><!-- end about-skills-tools -->
+
+
+        <!-- ===== BLOQUE 3: VALORES + CTA EN FILA ===== -->
+        <div class="about-bottom reveal">
+
+          <!-- Valores (2 cols) -->
+          <div class="values-grid">
+            <div class="value-card">
+              <div class="value-card__icon"><i class="fas fa-puzzle-piece"></i></div>
+              <h3 class="value-card__title">Integral Solutions</h3>
+              <p class="value-card__desc">From database design to the final pixel — I connect every layer to deliver coherent, efficient products.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-card__icon"><i class="fas fa-person-running"></i></div>
+              <h3 class="value-card__title">High Adaptability</h3>
+              <p class="value-card__desc">New tech, scope changes or tight deadlines — I adapt fast. My diverse background built this resilience.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-card__icon"><i class="fas fa-infinity"></i></div>
+              <h3 class="value-card__title">Continuous Growth</h3>
+              <p class="value-card__desc">Committed to constant learning — expanding skills, earning certifications and staying current with best practices.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-card__icon"><i class="fas fa-handshake"></i></div>
+              <h3 class="value-card__title">Teamwork &amp; Communication</h3>
+              <p class="value-card__desc">Clear communication is everything. I work collaboratively, listen actively and contribute positively to any team.</p>
+            </div>
+          </div>
+
+          <!-- CTA final -->
+          <div class="about-cta">
+            <div class="about-cta__glow"></div>
+            <p class="about-cta__subtitle">Ready to collaborate?</p>
+            <h2 class="about-cta__title">
+              Let's build something<br />
+              <span class="about-cta__title--accent">amazing together.</span>
+            </h2>
+            <p class="about-cta__desc">
+              I'm actively looking for new opportunities — remote, hybrid or on-site. 
+              If you think we could work together or just want to connect, I'd love to hear from you.
+            </p>
+            <div class="about-cta__actions">
+              <a href="../contacto/contacto.html" class="btn btn--primary">
+                <i class="fas fa-paper-plane"></i> Get in Touch
+              </a>
+              <a href="../certificados/certificados.html" class="btn btn--outline">
+                View Certificates <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div><!-- end about-bottom -->
+
+      </div><!-- end about-wrapper -->
+    </main>
+
+    <!-- Botón scroll to top -->
+    <a href="#" class="scroll-top-btn" id="scroll-top" aria-label="Scroll to top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="acercade.js"></script>
+  </body>
+</html>
               <div class="about-photo-ring about-photo-ring--outer"></div>
               <div class="about-photo-ring about-photo-ring--inner"></div>
               <div class="about-photo-frame">

@@ -99,32 +99,26 @@ function initSkillBars() {
 }
 
 /* ==========================================
-   TIMELINE — Animate items on scroll
+   TIMELINE COMPACTO — Animate items on scroll
    ========================================== */
 function initTimeline() {
-  const items = document.querySelectorAll('.timeline-item');
+  const items = document.querySelectorAll('.tl-compact-item');
   if (!items.length) return;
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0) translateX(0)';
+        entry.target.style.transform = 'translateX(0)';
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
 
   items.forEach((item, i) => {
     item.style.opacity = '0';
-    item.style.transition = `opacity .6s ease ${i * 0.15}s, transform .6s ease ${i * 0.15}s`;
-
-    if (item.classList.contains('timeline-item--left')) {
-      item.style.transform = 'translateX(-30px)';
-    } else {
-      item.style.transform = 'translateX(30px)';
-    }
-
+    item.style.transform = 'translateX(-18px)';
+    item.style.transition = `opacity .5s ease ${i * 0.1}s, transform .5s ease ${i * 0.1}s`;
     observer.observe(item);
   });
 }
