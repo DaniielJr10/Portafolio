@@ -560,12 +560,13 @@ body::after {
 }
 .about-bio__text {
   font-size: var(--font-size-base);
-  color: var(--color-text-secondary);
+  color: var(--color-text-primary);
   line-height: 1.85;
+  font-weight: 500;
 }
 .about-bio__text strong {
-  color: var(--color-text-primary);
-  font-weight: 600;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 /* Info personal (usada dentro de profile-card__details) */
