@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contacta a Daniel Lopez - Desarrollador Frontend y UI/UX Designer" />
+    <title>Daniel Lopez | Contact</title>
+    <link rel="stylesheet" href="contacto.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body>
+
+    <!-- ====== NAVBAR ====== -->
+    <header class="header scrolled" id="header">
+      <nav class="nav container">
+        <a href="../index.html" class="nav__logo">
+          <span class="nav__logo-icon"><i class="fas fa-gem"></i></span>
+          <span class="nav__logo-text">Daniel Lopez</span>
+        </a>
+
+        <ul class="nav__menu" id="nav-menu">
+          <li class="nav__item"><a href="../index.html#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="../index.html#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="../index.html#portfolio" class="nav__link">Portfolio</a></li>
+          <li class="nav__item"><a href="../index.html#testimonials" class="nav__link">Testimonials</a></li>
+          <li class="nav__item"><a href="contacto.html" class="nav__link active-link">Contact</a></li>
+        </ul>
+
+        <div class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ====== MAIN ====== -->
+    <main class="contact-page">
+
+      <!-- Fondo decorativo -->
+      <div class="contact-bg">
+        <div class="contact-bg__circle contact-bg__circle--1"></div>
+        <div class="contact-bg__circle contact-bg__circle--2"></div>
+        <div class="contact-bg__circle contact-bg__circle--3"></div>
+      </div>
+
+      <div class="contact-wrapper container">
+
+        <!-- ===== INFO (centrado) ===== -->
+        <div class="contact-info">
+
+          <!-- Badge Colombia -->
+          <div class="contact-badge">
+            <span class="contact-badge__flag">🇨🇴</span>
+            <span class="contact-badge__text">Based in Colombia</span>
+          </div>
+
+          <p class="contact-info__subtitle">Get in touch</p>
+          <h1 class="contact-info__title">
+            Let's work<br />
+            <span class="contact-info__title--accent">together.</span>
+          </h1>
+
+          <p class="contact-info__desc">
+            Have a project in mind, a question, or just want to say hello?
+            I'm always open to new opportunities and collaborations.
+            Reach out through any of the channels below — I'll get back
+            to you as soon as possible.
+          </p>
+
+          <!-- Canales de contacto -->
+          <div class="contact-channels">
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer" class="contact-channel contact-channel--wa">
+              <div class="contact-channel__icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div class="contact-channel__body">
+                <span class="contact-channel__label">WhatsApp</span>
+                <span class="contact-channel__value">+57 300 000 0000</span>
+              </div>
+              <i class="fas fa-arrow-right contact-channel__arrow"></i>
+            </a>
+
+            <!-- Gmail -->
+            <a href="mailto:daniellopez@gmail.com" class="contact-channel contact-channel--gm">
+              <div class="contact-channel__icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-channel__body">
+                <span class="contact-channel__label">Gmail</span>
+                <span class="contact-channel__value">daniellopez@gmail.com</span>
+              </div>
+              <i class="fas fa-arrow-right contact-channel__arrow"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/daniellopez" target="_blank" rel="noopener noreferrer" class="contact-channel contact-channel--li">
+              <div class="contact-channel__icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <div class="contact-channel__body">
+                <span class="contact-channel__label">LinkedIn</span>
+                <span class="contact-channel__value">linkedin.com/in/daniellopez</span>
+              </div>
+              <i class="fas fa-arrow-right contact-channel__arrow"></i>
+            </a>
+
+          </div><!-- end channels -->
+
+          <!-- Disponibilidad -->
+          <div class="contact-availability">
+            <span class="contact-availability__dot"></span>
+            <span class="contact-availability__text">Available for freelance &amp; full-time roles</span>
+          </div>
+
+        </div><!-- end contact-info -->
+
+      </div><!-- end contact-wrapper -->
+    </main>
+
+    <!-- Scroll top -->
+    <a href="#" class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="contacto.js"></script>
+  </body>
+</html>
