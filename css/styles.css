@@ -33,7 +33,7 @@
   --font-size-3xl:  2rem;
   --font-size-4xl:  2.5rem;
   --font-size-5xl:  3.5rem;
-  --font-size-hero: clamp(2.8rem, 6vw, 5.5rem);
+  --font-size-hero: clamp(2rem, 4.5vw, 4rem);
 
   /* Spacing */
   --space-xs:  .5rem;
