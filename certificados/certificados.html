@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Certificados y logros de Daniel Lopez - Desarrollador Frontend y UI/UX Designer" />
+    <title>Daniel Lopez | Certificates</title>
+    <link rel="stylesheet" href="certificados.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body>
+
+    <!-- ====== NAVBAR ====== -->
+    <header class="header scrolled" id="header">
+      <nav class="nav container">
+        <a href="../index.html" class="nav__logo">
+          <span class="nav__logo-icon"><i class="fas fa-gem"></i></span>
+          <span class="nav__logo-text">Daniel Lopez</span>
+        </a>
+
+        <ul class="nav__menu" id="nav-menu">
+          <li class="nav__item"><a href="../index.html#home"      class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="../index.html#about"     class="nav__link">About</a></li>
+          <li class="nav__item"><a href="../index.html#portfolio" class="nav__link">Portfolio</a></li>
+          <li class="nav__item"><a href="certificados.html"       class="nav__link active-link">Certificates</a></li>
+          <li class="nav__item"><a href="../contacto/contacto.html" class="nav__link">Contact</a></li>
+        </ul>
+
+        <div class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ====== MAIN ====== -->
+    <main class="certs-page">
+
+      <!-- Fondo decorativo -->
+      <div class="certs-bg">
+        <div class="certs-bg__circle certs-bg__circle--1"></div>
+        <div class="certs-bg__circle certs-bg__circle--2"></div>
+        <div class="certs-bg__circle certs-bg__circle--3"></div>
+      </div>
+
+      <div class="certs-wrapper container">
+
+        <!-- ===== HEADER DE SECCIÓN ===== -->
+        <div class="certs-header">
+          <p class="certs-header__subtitle">My achievements</p>
+          <h1 class="certs-header__title">
+            Certificates &amp;<br />
+            <span class="certs-header__title--accent">Credentials.</span>
+          </h1>
+          <p class="certs-header__desc">
+            A collection of certifications and courses that reflect my
+            commitment to continuous learning and professional growth.
+          </p>
+
+          <!-- Filtros de categoría -->
+          <div class="certs-filters" id="certs-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="tecnologia">Technology</button>
+            <button class="filter-btn" data-filter="idiomas">Languages</button>
+            <button class="filter-btn" data-filter="ciberseguridad">Cybersecurity</button>
+            <button class="filter-btn" data-filter="ia">AI</button>
+          </div>
+        </div>
+
+        <!-- ===== GRID DE CERTIFICADOS ===== -->
+        <div class="certs-grid" id="certs-grid">
+
+          <!-- Card 1 — Tecnólogo en ADSI -->
+          <article class="cert-card" data-category="tecnologia">
+            <div class="cert-card__ribbon">SENA</div>
+            <div class="cert-card__top">
+              <div class="cert-card__icon cert-card__icon--adsi">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="cert-card__meta">
+                <span class="cert-card__category">Technology</span>
+                <span class="cert-card__year">2024</span>
+              </div>
+            </div>
+            <div class="cert-card__body">
+              <h3 class="cert-card__title">Tecnólogo en Análisis y Desarrollo de Software</h3>
+              <p class="cert-card__issuer"><i class="fas fa-university"></i> SENA</p>
+              <p class="cert-card__desc">
+                Formación tecnológica en diseño, análisis y construcción de soluciones de software,
+                bases de datos, metodologías ágiles y fundamentos de ingeniería del software.
+              </p>
+            </div>
+            <div class="cert-card__footer">
+              <div class="cert-card__skills">
+                <span class="skill-tag">Software</span>
+                <span class="skill-tag">Bases de datos</span>
+                <span class="skill-tag">Agile</span>
+              </div>
+              <a href="#" class="cert-card__link" aria-label="Ver certificado">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2 — Técnico en Sistemas -->
+          <article class="cert-card" data-category="tecnologia">
+            <div class="cert-card__ribbon">SENA</div>
+            <div class="cert-card__top">
+              <div class="cert-card__icon cert-card__icon--sistemas">
+                <i class="fas fa-server"></i>
+              </div>
+              <div class="cert-card__meta">
+                <span class="cert-card__category">Technology</span>
+                <span class="cert-card__year">2022</span>
+              </div>
+            </div>
+            <div class="cert-card__body">
+              <h3 class="cert-card__title">Técnico en Sistemas</h3>
+              <p class="cert-card__issuer"><i class="fas fa-university"></i> SENA</p>
+              <p class="cert-card__desc">
+                Formación técnica en mantenimiento de equipos de cómputo, redes,
+                sistemas operativos, soporte técnico y fundamentos de programación.
+              </p>
+            </div>
+            <div class="cert-card__footer">
+              <div class="cert-card__skills">
+                <span class="skill-tag">Hardware</span>
+                <span class="skill-tag">Redes</span>
+                <span class="skill-tag">SO</span>
+              </div>
+              <a href="#" class="cert-card__link" aria-label="Ver certificado">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3 — Inglés SENA -->
+          <article class="cert-card" data-category="idiomas">
+            <div class="cert-card__ribbon">SENA</div>
+            <div class="cert-card__top">
+              <div class="cert-card__icon cert-card__icon--ingles">
+                <i class="fas fa-language"></i>
+              </div>
+              <div class="cert-card__meta">
+                <span class="cert-card__category">Languages</span>
+                <span class="cert-card__year">2023</span>
+              </div>
+            </div>
+            <div class="cert-card__body">
+              <h3 class="cert-card__title">English Does Work — Level 1</h3>
+              <p class="cert-card__issuer"><i class="fas fa-university"></i> SENA</p>
+              <p class="cert-card__desc">
+                Curso de inglés aplicado al entorno laboral con una intensidad horaria
+                de <strong>48 horas</strong>. Comunicación básica, vocabulario técnico
+                y comprensión de lectura en contextos profesionales.
+              </p>
+            </div>
+            <div class="cert-card__footer">
+              <div class="cert-card__skills">
+                <span class="skill-tag">English</span>
+                <span class="skill-tag">48 horas</span>
+                <span class="skill-tag">Level 1</span>
+              </div>
+              <a href="#" class="cert-card__link" aria-label="Ver certificado">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4 — Bootcamp Ciberseguridad -->
+          <article class="cert-card" data-category="ciberseguridad">
+            <div class="cert-card__ribbon">NedData</div>
+            <div class="cert-card__top">
+              <div class="cert-card__icon cert-card__icon--cyber">
+                <i class="fas fa-shield-halved"></i>
+              </div>
+              <div class="cert-card__meta">
+                <span class="cert-card__category">Cybersecurity</span>
+                <span class="cert-card__year">2024</span>
+              </div>
+            </div>
+            <div class="cert-card__body">
+              <h3 class="cert-card__title">Bootcamp Zero2Cyber</h3>
+              <p class="cert-card__issuer"><i class="fas fa-building"></i> NedData</p>
+              <p class="cert-card__desc">
+                Bootcamp intensivo de ciberseguridad: fundamentos de ethical hacking,
+                análisis de vulnerabilidades, seguridad en redes y buenas prácticas
+                en la protección de sistemas e infraestructuras digitales.
+              </p>
+            </div>
+            <div class="cert-card__footer">
+              <div class="cert-card__skills">
+                <span class="skill-tag">Ethical Hacking</span>
+                <span class="skill-tag">Redes</span>
+                <span class="skill-tag">Seguridad</span>
+              </div>
+              <a href="#" class="cert-card__link" aria-label="Ver certificado">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 5 — IA en procesos formativos -->
+          <article class="cert-card" data-category="ia">
+            <div class="cert-card__ribbon">Verified</div>
+            <div class="cert-card__top">
+              <div class="cert-card__icon cert-card__icon--ia">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="cert-card__meta">
+                <span class="cert-card__category">AI</span>
+                <span class="cert-card__year">2025</span>
+              </div>
+            </div>
+            <div class="cert-card__body">
+              <h3 class="cert-card__title">Rol de la IA en los Procesos Formativos</h3>
+              <p class="cert-card__issuer"><i class="fas fa-graduation-cap"></i> Formación Institucional</p>
+              <p class="cert-card__desc">
+                Curso sobre el rol de la inteligencia artificial en la educación:
+                ética del uso de IA, herramientas prácticas en entornos formativos
+                y perspectivas de futuro en la educación mediada por tecnología.
+              </p>
+            </div>
+            <div class="cert-card__footer">
+              <div class="cert-card__skills">
+                <span class="skill-tag">IA</span>
+                <span class="skill-tag">Ética</span>
+                <span class="skill-tag">Educación</span>
+              </div>
+              <a href="#" class="cert-card__link" aria-label="Ver certificado">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </article>
+
+        </div><!-- end certs-grid -->
+
+        <!-- ===== STATS ROW ===== -->
+        <div class="certs-stats">
+          <div class="certs-stat">
+            <span class="certs-stat__number" data-target="5">0</span>
+            <span class="certs-stat__label">Certificates</span>
+          </div>
+          <div class="certs-stat">
+            <span class="certs-stat__number" data-target="3">0</span>
+            <span class="certs-stat__label">Institutions</span>
+          </div>
+          <div class="certs-stat">
+            <span class="certs-stat__number" data-target="4">0</span>
+            <span class="certs-stat__label">Skill areas</span>
+          </div>
+          <div class="certs-stat">
+            <span class="certs-stat__number" data-target="48">0</span>
+            <span class="certs-stat__label">Hours (English)</span>
+          </div>
+        </div>
+            <span class="certs-stat__label">Years learning</span>
+          </div>
+          <div class="certs-stat">
+            <span class="certs-stat__number" data-target="5">0</span>
+            <span class="certs-stat__label">Skill areas</span>
+          </div>
+        </div>
+
+      </div><!-- end certs-wrapper -->
+    </main>
+
+    <!-- Scroll top -->
+    <a href="#" class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="certificados.js"></script>
+  </body>
+</html>
