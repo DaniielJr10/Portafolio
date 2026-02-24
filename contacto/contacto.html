@@ -47,14 +47,8 @@
 
       <div class="contact-wrapper container">
 
-        <!-- ===== INFO (centrado) ===== -->
+        <!-- ===== COLUMNA IZQUIERDA — Info ===== -->
         <div class="contact-info">
-
-          <!-- Badge Colombia -->
-          <div class="contact-badge">
-            <span class="contact-badge__flag">🇨🇴</span>
-            <span class="contact-badge__text">Based in Colombia</span>
-          </div>
 
           <p class="contact-info__subtitle">Get in touch</p>
           <h1 class="contact-info__title">
@@ -117,6 +111,66 @@
           </div>
 
         </div><!-- end contact-info -->
+
+        <!-- ===== COLUMNA DERECHA — Ubicación ===== -->
+        <div class="contact-location">
+          <div class="location-card">
+            <!-- Mapa decorativo SVG de Colombia -->
+            <div class="location-card__map">
+              <svg class="location-map-svg" viewBox="0 0 260 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M80 20 L100 15 L130 18 L155 25 L170 40 L175 60 L165 75 L170 95 L180 110 L178 130 L185 150 L180 170 L170 185 L160 200 L150 220 L140 240 L130 260 L120 250 L110 230 L100 210 L90 195 L80 180 L70 165 L65 145 L60 125 L55 105 L50 85 L55 65 L60 45 Z" fill="url(#colGrad)" opacity="0.18"/>
+                <path d="M80 20 L100 15 L130 18 L155 25 L170 40 L175 60 L165 75 L170 95 L180 110 L178 130 L185 150 L180 170 L170 185 L160 200 L150 220 L140 240 L130 260 L120 250 L110 230 L100 210 L90 195 L80 180 L70 165 L65 145 L60 125 L55 105 L50 85 L55 65 L60 45 Z" stroke="url(#colStroke)" stroke-width="1.5" fill="none" opacity="0.6"/>
+                <circle cx="118" cy="130" r="14" fill="rgba(77,159,255,0.12)"/>
+                <circle cx="118" cy="130" r="7" fill="rgba(77,159,255,0.25)"/>
+                <circle cx="118" cy="130" r="3.5" fill="#4d9fff"/>
+                <path d="M118 116 C112 116 107 121 107 127 C107 135 118 148 118 148 C118 148 129 135 129 127 C129 121 124 116 118 116Z" fill="url(#pinGrad)" opacity="0.9"/>
+                <circle cx="118" cy="127" r="3" fill="white" opacity="0.9"/>
+                <line x1="40" y1="80"  x2="200" y2="80"  stroke="rgba(77,159,255,0.06)" stroke-width="1"/>
+                <line x1="40" y1="130" x2="200" y2="130" stroke="rgba(77,159,255,0.06)" stroke-width="1"/>
+                <line x1="40" y1="180" x2="200" y2="180" stroke="rgba(77,159,255,0.06)" stroke-width="1"/>
+                <line x1="80"  y1="30" x2="80"  y2="270" stroke="rgba(77,159,255,0.06)" stroke-width="1"/>
+                <line x1="130" y1="30" x2="130" y2="270" stroke="rgba(77,159,255,0.06)" stroke-width="1"/>
+                <line x1="175" y1="30" x2="175" y2="270" stroke="rgba(77,159,255,0.06)" stroke-width="1"/>
+                <defs>
+                  <linearGradient id="colGrad" x1="50" y1="15" x2="185" y2="260" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4d9fff"/>
+                    <stop offset="1" stop-color="#7b61ff"/>
+                  </linearGradient>
+                  <linearGradient id="colStroke" x1="50" y1="15" x2="185" y2="260" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4d9fff"/>
+                    <stop offset="1" stop-color="#7b61ff"/>
+                  </linearGradient>
+                  <linearGradient id="pinGrad" x1="107" y1="116" x2="129" y2="148" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4d9fff"/>
+                    <stop offset="1" stop-color="#7b61ff"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span class="location-ping"></span>
+            </div>
+
+            <!-- Info -->
+            <div class="location-card__info">
+              <div class="location-card__top">
+                <span class="location-card__flag">🇨🇴</span>
+                <div>
+                  <p class="location-card__city">Bogotá, Colombia</p>
+                  <p class="location-card__country">South America · UTC−5</p>
+                </div>
+              </div>
+              <div class="location-card__divider"></div>
+              <div class="location-card__time-row">
+                <i class="fas fa-clock location-card__clock-icon"></i>
+                <span class="location-card__time-label">Local time</span>
+                <span class="location-card__time" id="local-time">--:-- --</span>
+              </div>
+              <div class="location-card__status">
+                <span class="location-card__status-dot"></span>
+                <span class="location-card__status-text">Open to remote work worldwide</span>
+              </div>
+            </div>
+          </div>
+        </div><!-- end contact-location -->
 
       </div><!-- end contact-wrapper -->
     </main>

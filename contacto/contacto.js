@@ -86,10 +86,35 @@ function initCursorEffect() {
 }
 
 /* ==========================================
+   LOCATION CARD — Live Colombia time (UTC−5)
+   ========================================== */
+function initLocalTime() {
+  const timeEl = document.getElementById('local-time');
+  if (!timeEl) return;
+
+  function updateTime() {
+    const now = new Date();
+    const colombiaTime = new Date(
+      now.toLocaleString('en-US', { timeZone: 'America/Bogota' })
+    );
+    const h = colombiaTime.getHours();
+    const m = String(colombiaTime.getMinutes()).padStart(2, '0');
+    const s = String(colombiaTime.getSeconds()).padStart(2, '0');
+    const ampm = h >= 12 ? 'PM' : 'AM';
+    const h12 = String(h % 12 || 12).padStart(2, '0');
+    timeEl.textContent = `${h12}:${m}:${s} ${ampm}`;
+  }
+
+  updateTime();
+  setInterval(updateTime, 1000);
+}
+
+/* ==========================================
    INIT
    ========================================== */
 function init() {
   initCursorEffect();
+  initLocalTime();
 }
 
 if (document.readyState === 'loading') {
