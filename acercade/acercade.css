@@ -230,6 +230,20 @@ body::after {
 .btn--outline i { transition: transform var(--transition-base); }
 .btn--outline:hover i { transform: translateX(5px); }
 
+/* Botón terciario sutil */
+.btn--ghost {
+  background: transparent;
+  color: var(--color-text-secondary);
+  border: 1.5px solid rgba(168,184,216,0.15);
+}
+.btn--ghost:hover {
+  border-color: rgba(168,184,216,0.35);
+  color: var(--color-text-primary);
+  transform: translateY(-3px);
+}
+.btn--ghost i { transition: transform var(--transition-base); }
+.btn--ghost:hover i { transform: translateX(5px); }
+
 /* ==========================================
    SCROLL TO TOP
    ========================================== */
