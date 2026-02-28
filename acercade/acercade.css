@@ -796,6 +796,7 @@ body::after {
 .sk-chip__icon--scrum  { background: linear-gradient(135deg,#5b3cc4,#7b61ff); box-shadow: 0 4px 12px rgba(123,97,255,.4); }
 .sk-chip__icon--excel  { background: linear-gradient(135deg,#185c37,#1d6f42); box-shadow: 0 4px 12px rgba(29,111,66,.4); }
 .sk-chip__icon--github { background: linear-gradient(135deg,#24292e,#57606a); box-shadow: 0 4px 12px rgba(87,96,106,.4); }
+.sk-chip__icon--ai     { background: linear-gradient(135deg,#6b21a8,#a855f7); box-shadow: 0 4px 12px rgba(168,85,247,.4); }
 
 /* Info */
 .sk-chip__info {
