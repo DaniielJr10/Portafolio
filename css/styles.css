@@ -658,6 +658,8 @@ body::after {
 .social-link--be  { background: var(--color-social-be); box-shadow: 0 4px 14px rgba(23,105,255,0.4); }
 .social-link--dr  { background: var(--color-social-dr); box-shadow: 0 4px 14px rgba(234,76,137,0.4); }
 .social-link--li  { background: var(--color-social-li); box-shadow: 0 4px 14px rgba(0,119,181,0.4); }
+.social-link--wa  { background: linear-gradient(135deg,#1da851,#25d366); box-shadow: 0 4px 14px rgba(37,211,102,0.4); }
+.social-link--gm  { background: linear-gradient(135deg,#c5221f,#ea4335); box-shadow: 0 4px 14px rgba(234,67,53,0.4); }
 
 /* ==========================================
    SCROLL TO TOP BUTTON
