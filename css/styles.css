@@ -33,7 +33,7 @@
   --font-size-3xl:  2rem;
   --font-size-4xl:  2.5rem;
   --font-size-5xl:  3.5rem;
-  --font-size-hero: clamp(2rem, 4.5vw, 4rem);
+  --font-size-hero: clamp(1.5rem, 3vw, 2.6rem);
 
   /* Spacing */
   --space-xs:  .5rem;
@@ -374,15 +374,15 @@ body::after {
 
 .home__description {
   font-size: var(--font-size-base);
-  color: var(--color-text-secondary);
+  color: #ffffff;
   line-height: 1.8;
   opacity: 0;
   animation: fadeSlideUp .7s .6s forwards;
 }
 
 .home__description strong {
-  color: var(--color-text-primary);
-  font-weight: 600;
+  color: #ffffff;
+  font-weight: 800;
 }
 
 /* Buttons */
