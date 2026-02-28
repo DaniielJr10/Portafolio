@@ -368,10 +368,8 @@ body::after {
 }
 
 .home__title--accent {
-  background: var(--color-accent-grad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
 }
 
 .home__description {

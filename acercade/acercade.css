@@ -569,10 +569,8 @@ body::after {
   margin-bottom: .15rem;
 }
 .about-bio__title--accent {
-  background: var(--color-accent-grad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
 }
 .about-bio__text {
   font-size: var(--font-size-base);
