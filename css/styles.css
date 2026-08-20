@@ -1,5 +1,5 @@
 /* ==========================================
-   DANIEL LOPEZ | PORTFOLIO
+  DANIEL LOPEZ | WEBSITE
    styles.css — Main Stylesheet
    ========================================== */
 
@@ -1013,6 +1013,13 @@ body::after {
 .hskill__fill.in-view {
   width: var(--sk-pct);
 }
+
+.hskill__fill--html { --sk-pct: 95%; --sk-color: #e34f26; }
+.hskill__fill--css { --sk-pct: 90%; --sk-color: #264de4; }
+.hskill__fill--js { --sk-pct: 80%; --sk-color: #f7df1e; }
+.hskill__fill--python { --sk-pct: 75%; --sk-color: #3776ab; }
+.hskill__fill--mongo { --sk-pct: 70%; --sk-color: #47a248; }
+.hskill__fill--sql { --sk-pct: 72%; --sk-color: #f29111; }
 
 /* ==========================================
    ACCESSIBILITY

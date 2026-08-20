@@ -1,5 +1,5 @@
 /* ==========================================
-   DANIEL LOPEZ | PORTFOLIO
+  DANIEL LOPEZ | WEBSITE
    contacto.js — Contact Page JavaScript
    ========================================== */
 

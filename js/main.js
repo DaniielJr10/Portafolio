@@ -1,5 +1,5 @@
 /* ==========================================
-   DANIEL LOPEZ | PORTFOLIO
+  DANIEL LOPEZ | WEBSITE
    main.js — Main JavaScript
    ========================================== */
 

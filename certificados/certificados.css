@@ -1,5 +1,5 @@
 /* ==========================================
-   DANIEL LOPEZ | PORTFOLIO
+  DANIEL LOPEZ | WEBSITE
    certificados.css — Certificates Page Stylesheet
    ========================================== */
 
@@ -124,8 +124,8 @@ body::after {
 
 .header.scrolled {
   background: rgba(5, 7, 26, 0.92);
-  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   box-shadow: 0 1px 0 var(--color-border);
 }
 
@@ -330,6 +330,7 @@ body::after {
   color: var(--color-text-muted);
   background: rgba(15,22,64,0.6);
   border: 1px solid var(--color-border);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   transition: all var(--transition-base);
 }
@@ -370,8 +371,8 @@ body::after {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: var(--space-md);
-  backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
   overflow: hidden;
   transition: transform var(--transition-base),
               box-shadow var(--transition-base),
@@ -590,6 +591,7 @@ body::after {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: var(--space-md) var(--space-sm);
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   text-align: center;
   transition: transform var(--transition-base), border-color var(--transition-base);
@@ -685,6 +687,7 @@ body::after {
     position: fixed;
     inset: 0;
     background: rgba(5, 7, 26, 0.98);
+    -webkit-backdrop-filter: blur(24px);
     backdrop-filter: blur(24px);
     flex-direction: column;
     justify-content: center;

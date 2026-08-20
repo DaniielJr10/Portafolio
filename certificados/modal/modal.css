@@ -1,5 +1,5 @@
 /* ==========================================
-   DANIEL LOPEZ | PORTFOLIO
+  DANIEL LOPEZ | WEBSITE
    modal.css — Certificate Viewer Modal
    ========================================== */
 
@@ -29,9 +29,13 @@
   position: absolute;
   inset: 0;
   background: rgba(3, 5, 18, 0.88);
-  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   cursor: pointer;
+}
+
+.modal-loader__error {
+  color: #ef4444;
 }
 
 /* ==========================================

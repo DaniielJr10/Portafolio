@@ -1,5 +1,5 @@
 /* ==========================================
-   DANIEL LOPEZ | PORTFOLIO
+  DANIEL LOPEZ | WEBSITE
    acercade.css — About Me Page Stylesheet
    ========================================== */
 
@@ -116,8 +116,8 @@ body::after {
 }
 .header.scrolled {
   background: rgba(5,7,26,0.92);
-  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   box-shadow: 0 1px 0 var(--color-border);
 }
 .nav {
@@ -383,6 +383,7 @@ body::after {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: 1.5rem 1.25rem;
+  -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
   display: flex;
   flex-direction: column;
@@ -447,6 +448,7 @@ body::after {
   font-weight: 700;
   color: #10b981;
   white-space: nowrap;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   letter-spacing: .05em;
   text-transform: uppercase;
@@ -775,6 +777,7 @@ body::after {
   min-width: 72px;
   flex: 1 1 72px;
   max-width: 96px;
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   transition: border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
   cursor: default;
@@ -860,6 +863,20 @@ body::after {
 }
 .skill-item__fill.in-view { width: var(--sk-pct); }
 
+.skill-item__fill--html { --sk-pct: 95%; --sk-color: #e34f26; }
+.skill-item__fill--css { --sk-pct: 90%; --sk-color: #264de4; }
+.skill-item__fill--js { --sk-pct: 80%; --sk-color: #f7df1e; }
+.skill-item__fill--python { --sk-pct: 75%; --sk-color: #3776ab; }
+.skill-item__fill--flutter { --sk-pct: 65%; --sk-color: #54c5f8; }
+.skill-item__fill--mysql { --sk-pct: 72%; --sk-color: #f29111; }
+.skill-item__fill--mongo { --sk-pct: 70%; --sk-color: #47a248; }
+.skill-item__fill--figma { --sk-pct: 85%; --sk-color: #f24e1e; }
+.skill-item__fill--git { --sk-pct: 78%; --sk-color: #f05030; }
+.skill-item__fill--scrum { --sk-pct: 80%; --sk-color: #7b61ff; }
+.skill-item__fill--excel { --sk-pct: 82%; --sk-color: #1d6f42; }
+.skill-item__fill--github { --sk-pct: 78%; --sk-color: #e6edf3; }
+.skill-item__fill--ai { --sk-pct: 80%; --sk-color: #a855f7; }
+
 /* ==========================================
    SOFT SKILLS
    ========================================== */
@@ -877,6 +894,7 @@ body::after {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: .7rem 1rem;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   transition: border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
 }
@@ -981,6 +999,7 @@ body::after {
   font-size: var(--font-size-xs);
   font-weight: 500;
   color: var(--color-text-secondary);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   transition: all var(--transition-fast);
   cursor: default;
@@ -1100,6 +1119,7 @@ body::after {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: 2rem 1.5rem;
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   transition: border-color var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
   position: relative;
@@ -1164,6 +1184,7 @@ body::after {
   background: rgba(15,22,64,0.5);
   border: 1px solid var(--color-border);
   border-radius: 2rem;
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   position: relative;
   overflow: hidden;
@@ -1267,6 +1288,7 @@ body::after {
     position: fixed;
     inset: 0;
     background: rgba(5,7,26,0.98);
+    -webkit-backdrop-filter: blur(24px);
     backdrop-filter: blur(24px);
     flex-direction: column;
     justify-content: center;

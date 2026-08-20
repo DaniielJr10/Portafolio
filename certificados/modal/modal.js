@@ -1,5 +1,5 @@
 /*   modal.js - Certificate Viewer (PDF.js)==========================================
-   DANIEL LOPEZ | PORTFOLIO
+  DANIEL LOPEZ | WEBSITE
    modal.js � Certificate Viewer (PDF.js)
    ========================================== */
 
@@ -130,7 +130,7 @@ async function openModal({ pdf, title, label, icon, color }) {
     await renderAllPages();
   } catch (err) {
     console.error('Error al cargar el PDF:', err);
-    modalLoader.innerHTML = '<p style="color:#ef4444">Error al cargar el certificado.</p>';
+    modalLoader.innerHTML = '<p class="modal-loader__error">Error al cargar el certificado.</p>';
   }
 }
 
