@@ -156,8 +156,8 @@ body::after {
 
 .header.scrolled {
   background: rgba(5, 7, 26, 0.92);
-  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   box-shadow: 0 1px 0 var(--color-border);
 }
 
@@ -639,6 +639,7 @@ body::after {
 }
 
 .social-link {
+  position: relative;
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -649,8 +650,35 @@ body::after {
   transition: transform var(--transition-base), box-shadow var(--transition-base);
 }
 
-.social-link:hover {
+.social-link::after {
+  content: attr(aria-label);
+  position: absolute;
+  right: calc(100% + .7rem);
+  top: 50%;
+  padding: .35rem .55rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(6px, -50%);
+  transition: opacity var(--transition-base), transform var(--transition-base);
+}
+
+.social-link:hover,
+.social-link:focus-visible {
   transform: scale(1.15) translateX(-4px);
+}
+
+.social-link:hover::after,
+.social-link:focus-visible::after {
+  opacity: 1;
+  transform: translate(0, -50%);
 }
 
 .social-link--be  { background: var(--color-social-be); box-shadow: 0 4px 14px rgba(23,105,255,0.4); }
@@ -751,6 +779,7 @@ body::after {
     position: fixed;
     inset: 0;
     background: rgba(5, 7, 26, 0.98);
+    -webkit-backdrop-filter: blur(24px);
     backdrop-filter: blur(24px);
     flex-direction: column;
     justify-content: center;
@@ -892,6 +921,7 @@ body::after {
   min-width: 72px;
   flex: 1 1 72px;
   max-width: 96px;
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   transition: border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
   cursor: default;
