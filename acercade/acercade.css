@@ -719,10 +719,21 @@ body::after {
   min-width: 0;
 }
 
+.about-skills-col > .section-label,
+.about-softskills-row > .section-label {
+  display: block;
+  text-align: center;
+}
+
+.about-skills-col > .section-label .section-label__line,
+.about-softskills-row > .section-label .section-label__line {
+  display: none;
+}
+
 /* Soft skills en grid horizontal */
 .soft-skills--grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.75rem;
 }
 
@@ -875,8 +886,7 @@ body::after {
    SOFT SKILLS
    ========================================== */
 .soft-skills {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: .6rem;
 }
 
@@ -923,6 +933,7 @@ body::after {
 .soft-skill__body {
   display: flex;
   flex: 1;
+  min-width: 0;
   align-items: center;
   justify-content: space-between;
   gap: .5rem;
@@ -933,7 +944,9 @@ body::after {
   font-size: var(--font-size-sm);
   font-weight: 600;
   color: var(--color-text-primary);
-  white-space: nowrap;
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 /* Estrellas de nivel (5 = máximo) */
@@ -1246,6 +1259,7 @@ body::after {
   .about-stats { grid-template-columns: repeat(3,1fr); gap: .5rem; }
   .stat-card { padding: 1rem .5rem; }
   .stat-card__number { font-size: 1.4rem; }
+  .soft-skills--grid { grid-template-columns: 1fr; }
 }
 
 /* ==========================================
