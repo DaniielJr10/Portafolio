@@ -801,7 +801,8 @@ body::after {
 .sk-chip__icon--mysql  { background: linear-gradient(135deg,#c96a00,#f29111); box-shadow: 0 4px 12px rgba(242,145,17,.45); }
 .sk-chip__icon--mongo  { background: linear-gradient(135deg,#1a4731,#47a248); box-shadow: 0 4px 12px rgba(71,162,72,.45); }
 .sk-chip__icon--figma  { background: linear-gradient(135deg,#a259ff,#f24e1e); box-shadow: 0 4px 12px rgba(242,78,30,.4); }
-.sk-chip__icon--git    { background: linear-gradient(135deg,#c0392b,#f05030); box-shadow: 0 4px 12px rgba(240,80,48,.4); }
+.sk-chip__icon--capcut { background: linear-gradient(135deg,#111827,#4b5563); box-shadow: 0 4px 12px rgba(75,85,99,.4); }
+.sk-chip__icon--office { background: linear-gradient(135deg,#b7472a,#e9763f); box-shadow: 0 4px 12px rgba(233,118,63,.4); }
 .sk-chip__icon--scrum  { background: linear-gradient(135deg,#5b3cc4,#7b61ff); box-shadow: 0 4px 12px rgba(123,97,255,.4); }
 .sk-chip__icon--excel  { background: linear-gradient(135deg,#185c37,#1d6f42); box-shadow: 0 4px 12px rgba(29,111,66,.4); }
 .sk-chip__icon--github { background: linear-gradient(135deg,#24292e,#57606a); box-shadow: 0 4px 12px rgba(87,96,106,.4); }
@@ -857,13 +858,14 @@ body::after {
 
 .skill-item__fill--html { --sk-pct: 95%; --sk-color: #e34f26; }
 .skill-item__fill--css { --sk-pct: 90%; --sk-color: #264de4; }
-.skill-item__fill--js { --sk-pct: 80%; --sk-color: #f7df1e; }
-.skill-item__fill--python { --sk-pct: 75%; --sk-color: #3776ab; }
+.skill-item__fill--js { --sk-pct: 50%; --sk-color: #f7df1e; }
+.skill-item__fill--python { --sk-pct: 40%; --sk-color: #3776ab; }
 .skill-item__fill--flutter { --sk-pct: 65%; --sk-color: #54c5f8; }
 .skill-item__fill--mysql { --sk-pct: 72%; --sk-color: #f29111; }
 .skill-item__fill--mongo { --sk-pct: 70%; --sk-color: #47a248; }
 .skill-item__fill--figma { --sk-pct: 85%; --sk-color: #f24e1e; }
-.skill-item__fill--git { --sk-pct: 78%; --sk-color: #f05030; }
+.skill-item__fill--capcut { --sk-pct: 70%; --sk-color: #9ca3af; }
+.skill-item__fill--office { --sk-pct: 78%; --sk-color: #e9763f; }
 .skill-item__fill--scrum { --sk-pct: 80%; --sk-color: #7b61ff; }
 .skill-item__fill--excel { --sk-pct: 82%; --sk-color: #1d6f42; }
 .skill-item__fill--github { --sk-pct: 78%; --sk-color: #e6edf3; }
