@@ -219,6 +219,9 @@ if (form) {
       // -------------------------------------------------------------------------------
 
       showFeedback('success', 'Your message was sent! I\'ll get back to you soon 🚀');
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'contact_form_submit', { form_name: 'contact' });
+      }
       form.reset();
     } catch {
       showFeedback('error', 'Something went wrong. Please try again or use one of the contact channels.');
