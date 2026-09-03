@@ -757,3 +757,7 @@ body::after {
   }
   html { scroll-behavior: auto; }
 }
+
+@media screen and (max-width: 768px) {
+  .nav__menu { width: 170px; }
+}

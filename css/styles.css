@@ -1122,7 +1122,7 @@ body::after {
     right: 1rem;
     bottom: auto;
     left: auto;
-    width: min(250px, calc(100vw - 2rem));
+    width: 170px;
     display: flex;
     height: auto;
     flex-direction: column;
