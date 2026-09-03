@@ -1316,5 +1316,5 @@ body::after {
 }
 
 @media screen and (max-width: 768px) {
-  .nav__menu { width: 170px; }
+  .nav__menu { width: 180px; }
 }
