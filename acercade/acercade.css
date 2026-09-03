@@ -1255,6 +1255,8 @@ body::after {
   .nav__link.active-link { background: rgba(77,159,255,.12); }
   .about-wrapper { padding-bottom: calc(5.5rem + env(safe-area-inset-bottom)); }
 
+  .about-actions { justify-content: center; }
+
   /* Bio details — columna en móvil ya es flex-col por defecto */
   .about-details {
     gap: .6rem;
