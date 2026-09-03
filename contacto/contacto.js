@@ -18,14 +18,18 @@ const scrollTop = document.getElementById('scroll-top');
    NAVBAR — Mobile toggle
    ========================================== */
 function toggleMenu() {
-  navMenu.classList.toggle('open');
-  navToggle.classList.toggle('open');
+  const isOpen = navMenu.classList.toggle('open');
+  navToggle.classList.toggle('open', isOpen);
+  navToggle.setAttribute('aria-expanded', isOpen);
+  navToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
   document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
 }
 
 function closeMenu() {
   navMenu.classList.remove('open');
   navToggle.classList.remove('open');
+  navToggle.setAttribute('aria-expanded', 'false');
+  navToggle.setAttribute('aria-label', 'Open navigation menu');
   document.body.style.overflow = '';
 }
 
@@ -33,6 +37,14 @@ if (navToggle) navToggle.addEventListener('click', toggleMenu);
 navLinks.forEach(link => link.addEventListener('click', closeMenu));
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && navMenu.classList.contains('open')) closeMenu();
+});
+
+document.addEventListener('click', (e) => {
+  if (navMenu.classList.contains('open') && !navMenu.contains(e.target) && !navToggle.contains(e.target)) closeMenu();
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) closeMenu();
 });
 
 /* ==========================================

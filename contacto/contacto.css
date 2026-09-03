@@ -736,6 +736,19 @@ body::after {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 768px) {
+  .nav { position: relative; }
+  .nav__toggle { display: flex; width: 42px; height: 42px; align-items: center; justify-content: center; gap: 5px; padding: 8px; border: 1px solid var(--color-border); border-radius: .75rem; background: rgba(15,22,64,.72); color: var(--color-text-primary); }
+  .nav__menu { position: absolute; top: calc(var(--nav-height) - .25rem); right: 1rem; bottom: auto; left: auto; width: min(250px, calc(100vw - 2rem)); display: flex; height: auto; flex-direction: column; align-items: stretch; gap: .35rem; padding: .6rem; opacity: 0; visibility: hidden; transform: translateY(-10px) scale(.98); transform-origin: top right; pointer-events: none; transition: opacity var(--transition-base), transform var(--transition-base), visibility var(--transition-base); }
+  .nav__menu.open { opacity: 1; visibility: visible; transform: translateY(0) scale(1); pointer-events: auto; }
+  .nav__item { flex: initial; }
+  .nav__link { height: auto; flex-direction: row; justify-content: flex-start; gap: .9rem; padding: .8rem .9rem; border-radius: .7rem; font-size: .9rem; text-align: left; }
+  .nav__link i { width: 1.25rem; color: var(--color-accent-light); font-size: 1rem; text-align: center; }
+  .nav__link::after { display: none; }
+  .nav__link.active-link { background: rgba(77,159,255,.14); color: var(--color-text-primary); }
+  .nav__link.active-link i { color: var(--color-accent); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: .01ms !important;
