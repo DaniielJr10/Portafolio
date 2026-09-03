@@ -129,8 +129,8 @@ async function openModal({ pdf, title, label, icon, color }) {
     pdfDoc = await pdfjsLib.getDocument(pdf).promise;
     await renderAllPages();
   } catch (err) {
-    console.error('Error al cargar el PDF:', err);
-    modalLoader.innerHTML = '<p class="modal-loader__error">Error al cargar el certificado.</p>';
+    console.error('Error loading PDF:', err);
+    modalLoader.innerHTML = '<p class="modal-loader__error">Error loading certificate.</p>';
   }
 }
 
