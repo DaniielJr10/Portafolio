@@ -853,14 +853,14 @@ body::after {
 
   /* Hero — stack vertically */
   .home {
-    padding-top: calc(var(--nav-height) + 1rem);
+    padding-top: calc(var(--nav-height) + .25rem);
   }
 
   .home__container {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: var(--space-xl);
-    padding-top: var(--space-lg);
+    gap: .9rem;
+    padding-top: .75rem;
     padding-bottom: var(--space-xl);
   }
 
@@ -882,12 +882,17 @@ body::after {
 
   .home__description {
     font-size: var(--font-size-sm);
+    line-height: 1.5;
   }
 
   .home__description br { display: none; }
 
   .home__buttons {
     justify-content: center;
+  }
+
+  .home__skills {
+    margin-top: .25rem;
   }
 
   .home__scroll {
