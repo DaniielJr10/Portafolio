@@ -147,6 +147,21 @@ body::after {
 }
 .nav__logo:hover { opacity: .8; }
 
+.nav__logo-copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.nav__logo-subtitle {
+  margin-top: .2rem;
+  color: var(--color-accent-light);
+  font-size: .58rem;
+  font-weight: 500;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
 .nav__logo-icon {
   width: 36px; height: 36px;
   background: var(--color-accent-grad);
