@@ -405,7 +405,7 @@ body::after {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   opacity: 0;
   animation: fadeSlideUp .7s .8s forwards;
   margin-top: .5rem;
@@ -889,6 +889,9 @@ body::after {
 
   .home__buttons {
     justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: .25rem;
   }
 
   .home__skills {
