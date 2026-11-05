@@ -414,6 +414,7 @@ body::after {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: .5rem;
   padding: .875rem 1.75rem;
   border-radius: var(--radius-full);
@@ -422,6 +423,7 @@ body::after {
   letter-spacing: .02em;
   transition: all var(--transition-base);
   white-space: nowrap;
+  min-width: 0;
 }
 
 .btn--primary {
@@ -888,10 +890,33 @@ body::after {
   .home__description br { display: none; }
 
   .home__buttons {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding-bottom: .25rem;
+    gap: .5rem;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
+  .home__buttons .btn {
+    flex: 1 1 calc(50% - .5rem);
+    min-width: 0;
+    padding: .7rem .7rem;
+    font-size: .72rem;
+    line-height: 1.2;
+  }
+
+  .home__buttons .btn:last-child {
+    flex-basis: 100%;
+    max-width: 180px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .home__buttons .btn {
+    padding: .68rem .55rem;
+    font-size: .66rem;
   }
 
   .home__skills {
