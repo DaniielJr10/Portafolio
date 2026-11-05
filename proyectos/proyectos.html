@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Proyectos destacables de Daniel Lopez: aplicaciones móviles, web progresiva y soluciones backend." />
+    <title>Daniel Lopez | Proyectos</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQ8SQ4P1QR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GQ8SQ4P1QR');
+    </script>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="proyectos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body>
+    <header class="header scrolled" id="header">
+      <nav class="nav container">
+        <a href="../index.html" class="nav__logo">
+          <span class="nav__logo-icon"><i class="fas fa-gem"></i></span>
+          <span class="nav__logo-copy">
+            <span class="nav__logo-text">Daniel Lopez</span>
+            <span class="nav__logo-subtitle">Software Developer</span>
+          </span>
+        </a>
+
+        <ul class="nav__menu" id="nav-menu">
+          <li class="nav__item"><a href="../index.html#home" class="nav__link"><i class="fas fa-house" aria-hidden="true"></i><span>Home</span></a></li>
+          <li class="nav__item"><a href="../acercade/acercade.html" class="nav__link"><i class="fas fa-user" aria-hidden="true"></i><span>About</span></a></li>
+          <li class="nav__item"><a href="../experiencia/experiencia.html" class="nav__link"><i class="fas fa-briefcase" aria-hidden="true"></i><span>Experience</span></a></li>
+          <li class="nav__item"><a href="proyectos.html" class="nav__link active-link"><i class="fas fa-diagram-project" aria-hidden="true"></i><span>Projects</span></a></li>
+          <li class="nav__item"><a href="../certificados/certificados.html" class="nav__link"><i class="fas fa-award" aria-hidden="true"></i><span>Certificates</span></a></li>
+          <li class="nav__item"><a href="../contacto/contacto.html" class="nav__link"><i class="fas fa-envelope" aria-hidden="true"></i><span>Contact</span></a></li>
+        </ul>
+
+        <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open navigation menu" aria-controls="nav-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="projects-page">
+      <section class="projects-hero container reveal">
+        <p class="eyebrow">Portafolio</p>
+        <h1>Proyectos destacados</h1>
+        <p class="projects-hero__copy">
+          Desarrollo soluciones digitales que integran aplicaciones móviles y web, desarrollo backend, gestión de bases de datos y servicios en la nube. Estos proyectos reflejan mis conocimientos técnicos y mi capacidad para desarrollar soluciones funcionales orientadas a necesidades reales.
+        </p>
+      </section>
+
+      <section class="projects-grid container" aria-label="Lista de proyectos">
+        <article class="project-card reveal">
+          <div class="project-card__media project-card__media--soccerlife">
+            <div class="project-card__badge">APLICACIÓN MÓVIL</div>
+            <div class="project-card__icon"><i class="fas fa-futbol"></i></div>
+          </div>
+          <div class="project-card__content">
+            <h2>SOCCERLIFE</h2>
+            <p class="project-card__subtitle">Desarrollo deportivo</p>
+            <p class="project-card__summary">
+              Aplicación móvil enfocada en el entorno futbolístico, desarrollada con una arquitectura Full Stack que integra una interfaz móvil con un backend propio para la gestión de usuarios y servicios mediante una API REST.
+            </p>
+            <div class="tech-list">
+              <span class="tech-item tech-item--flutter"><i class="fas fa-mobile-alt"></i><span>Flutter</span></span>
+              <span class="tech-item tech-item--dart"><i class="fab fa-dart-lang"></i><span>Dart</span></span>
+              <span class="tech-item tech-item--node"><i class="fab fa-node-js"></i><span>Node.js</span></span>
+              <span class="tech-item tech-item--express"><i class="fas fa-server"></i><span>Express</span></span>
+              <span class="tech-item tech-item--mongo"><i class="fas fa-database"></i><span>MongoDB</span></span>
+              <span class="tech-item tech-item--jwt"><i class="fas fa-key"></i><span>JWT</span></span>
+            </div>
+            <ul class="project-card__features">
+              <li>Autenticación y autorización de usuarios mediante JWT.</li>
+              <li>Recuperación de contraseñas a través de correo electrónico.</li>
+              <li>Integración con API REST para la comunicación entre frontend y backend.</li>
+              <li>Gestión de usuarios y administración de cuentas.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__media project-card__media--wallet">
+            <div class="project-card__badge">APLICACIÓN MÓVIL</div>
+            <div class="project-card__icon"><i class="fas fa-wallet"></i></div>
+          </div>
+          <div class="project-card__content">
+            <h2>WALLET FLOW</h2>
+            <p class="project-card__subtitle">Finanzas personales</p>
+            <p class="project-card__summary">
+              Aplicación móvil orientada a la gestión de finanzas personales, diseñada para facilitar la organización de la información financiera mediante una interfaz intuitiva y servicios de almacenamiento en la nube.
+            </p>
+            <div class="tech-list">
+              <span class="tech-item tech-item--flutter"><i class="fas fa-mobile-alt"></i><span>Flutter</span></span>
+              <span class="tech-item tech-item--dart"><i class="fab fa-dart-lang"></i><span>Dart</span></span>
+              <span class="tech-item tech-item--firebase"><i class="fas fa-fire"></i><span>Firebase Auth</span></span>
+              <span class="tech-item tech-item--firebase"><i class="fas fa-database"></i><span>Cloud Firestore</span></span>
+            </div>
+            <ul class="project-card__features">
+              <li>Autenticación y gestión de usuarios con Firebase Authentication.</li>
+              <li>Almacenamiento y administración de información mediante Cloud Firestore.</li>
+              <li>Interfaz móvil intuitiva para la gestión financiera.</li>
+              <li>Organización y seguimiento de información financiera personal.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__media project-card__media--lash">
+            <div class="project-card__badge">APLICACIÓN WEB PROGRESIVA (PWA)</div>
+            <div class="project-card__icon"><i class="fas fa-spa"></i></div>
+          </div>
+          <div class="project-card__content">
+            <h2>MI LASH BOOK</h2>
+            <p class="project-card__subtitle">Gestión empresarial</p>
+            <p class="project-card__summary">
+              Aplicación web progresiva diseñada para optimizar la administración de negocios de belleza, centralizando la gestión de clientes, citas, servicios y movimientos financieros en una plataforma digital.
+            </p>
+            <div class="tech-list">
+              <span class="tech-item tech-item--html"><i class="fab fa-html5"></i><span>HTML5</span></span>
+              <span class="tech-item tech-item--css"><i class="fab fa-css3-alt"></i><span>CSS3</span></span>
+              <span class="tech-item tech-item--js"><i class="fab fa-js"></i><span>JavaScript</span></span>
+              <span class="tech-item tech-item--supabase"><i class="fas fa-database"></i><span>Supabase</span></span>
+              <span class="tech-item tech-item--storage"><i class="fas fa-hard-drive"></i><span>localStorage</span></span>
+            </div>
+            <ul class="project-card__features">
+              <li>Registro y administración de clientes.</li>
+              <li>Gestión de citas y programación de servicios.</li>
+              <li>Administración del catálogo de servicios.</li>
+              <li>Control de ingresos y gastos.</li>
+              <li>Almacenamiento de información mediante Supabase.</li>
+              <li>Persistencia local de datos mediante localStorage.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
